@@ -465,7 +465,10 @@
       "__id__": 3
     },
     "player": {
-      "__id__": 4
-    }
+      "__id__": 9
+    },
+    "speed": 10,
+    "obj": null,
+    "isMove": false
   }
 ]

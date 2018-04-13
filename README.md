@@ -1,2 +1,1 @@
-# hello-world
-Hello world new project template.
+## cocos_creator 虚拟摇杆

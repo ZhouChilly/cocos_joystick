@@ -42,7 +42,7 @@ cc.Class({
     },
 
     _touchStartEvent(event) {
-        // 记录触摸的世界坐标，给touch move使用
+        // 以圆圈为坐标系获取触摸坐标
         var touchPos = this.ring.convertToNodeSpaceAR(event.currentTouch._point);
         // 更改摇杆的位置
         // var act = cc.moveTo(0.1, touchPos);
@@ -53,7 +53,6 @@ cc.Class({
     },
 
     _touchMoveEvent(event) {
-        // 以圆圈为坐标系获取触摸坐标
         var touchPos = this.ring.convertToNodeSpaceAR(event.currentTouch._point);
         var distance = cc.pDistance(touchPos, cc.p(0, 0));
         var radius = this.ring.width / 2;

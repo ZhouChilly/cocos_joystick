@@ -80,6 +80,7 @@ cc.Class({
 
     computeRotation(touchPos) {
         var obj = {}
+        // 在 touchPos.y === 0，即水平轴时，会出现一个异常显示
         obj.radian = Math.atan(touchPos.x / touchPos.y);
         obj.rotation = (180 * obj.radian / Math.PI + 90) % 360;
         if (touchPos.y < 0) {
